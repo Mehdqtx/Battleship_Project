@@ -131,7 +131,7 @@ object Main extends App {
   }
 
 
-  /**Will initalize and ask players to shoot a position on enemy's grid. Shot until game is finished. Playing 100 games, switching player who start shooting each times.
+  /**Will initialize and ask players to shoot a position on enemy's grid. Shot until game is finished. Playing 100 games, switching player who start shooting each times.
     *
     * @param player1 First Player
     * @param scorePlayer1 player1 scores. It increase each time player1 win a game.

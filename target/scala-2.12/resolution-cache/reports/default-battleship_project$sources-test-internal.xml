@@ -7,7 +7,7 @@
 		revision="0.1"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20181008202115"/>
+		date="20181009130556"/>
 	<dependencies>
 		<module organisation="org.scalatest" name="scalatest_2.12">
 			<revision name="3.0.5" status="release" pubdate="20180129142347" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scalatest.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
@@ -39,7 +39,7 @@
 				<metadata-artifact status="no" details="" size="3095" time="0" location="C:\Users\Mehdi\.ivy2\cache\com.github.tototoshi\scala-csv_2.12\ivy-1.3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.12/1.3.5/scala-csv_2.12-1.3.5.pom"/>
 				<caller organisation="default" name="battleship_project$sources" conf="test, compile, provided, test-internal, runtime, optional" rev="1.3.5" rev-constraint-default="1.3.5" rev-constraint-dynamic="1.3.5" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="scala-csv_2.12" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="10330" time="573" location="C:\Users\Mehdi\.ivy2\cache\com.github.tototoshi\scala-csv_2.12\srcs\scala-csv_2.12-1.3.5-sources.jar">
+					<artifact name="scala-csv_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="10330" time="0" location="C:\Users\Mehdi\.ivy2\cache\com.github.tototoshi\scala-csv_2.12\srcs\scala-csv_2.12-1.3.5-sources.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/tototoshi/scala-csv_2.12/1.3.5/scala-csv_2.12-1.3.5-sources.jar"/>
 					</artifact>
 				</artifacts>

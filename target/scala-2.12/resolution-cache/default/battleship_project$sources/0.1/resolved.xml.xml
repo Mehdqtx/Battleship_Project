@@ -4,7 +4,7 @@
 		module="battleship_project$sources"
 		revision="0.1"
 		status="integration"
-		publication="20181008202115"
+		publication="20181009130556"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
