@@ -41,7 +41,7 @@ case class Boat( _name: String, _size : Int, _positions: Option[List[(Int,Int)]]
           this.placeBoat(x,y+1,newGrid,size-1,direction,allBoatPositions)
         }
       } catch {
-        case e: Exception => this.placeBoat(x,y+1,grid,0,direction,boatPositions)
+        case e: Exception => (boatPositions,grid)
       }
 
     }

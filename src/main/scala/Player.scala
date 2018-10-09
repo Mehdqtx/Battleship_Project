@@ -292,20 +292,20 @@ case class Player(_name:String, _personalGrid :  List[List[Int]], _shotGrid : Li
     * @return return the new grid containing placed boats and a List of boat which contains, for each boats, all his positions.
     */
   def positionPlayerFleet(starterFleet : Option[List[Boat]], grid : List[List[Int]],nbToPlace: Int, placedFleet : List[Boat] = Nil): (List[List[Int]],Option[List[Boat]]) ={
-    // No more boats to place
-    if (nbToPlace == 0) (grid,Some(placedFleet))
-    else{
 
-      // Take the first boat of the initial list of boats
-      val boatToPlace = starterFleet.get.head
-      val newBoatAndGrid = Player.askPlaceBoat(boatToPlace,grid, this.typeOfPlayer)
-      val boatPlaced = newBoatAndGrid._1
-      val newGrid = newBoatAndGrid._2
-      if(this.typeOfPlayer == 0)Utility.displayGrid("PERSONAL GRID",newGrid)
+        // No more boats to place
+        if (nbToPlace == 0) (grid,Some(placedFleet))
+        else{
 
-      positionPlayerFleet(Some(starterFleet.get.tail),newGrid,nbToPlace-1,boatPlaced::placedFleet)
+          // Take the first boat of the initial list of boats
+          val boatToPlace = starterFleet.get.head
+          val newBoatAndGrid = Player.askPlaceBoat(boatToPlace,grid, this.typeOfPlayer)
+          val boatPlaced = newBoatAndGrid._1
+          val newGrid = newBoatAndGrid._2
+          if(this.typeOfPlayer == 0)Utility.displayGrid("PERSONAL GRID",newGrid)
+
+          positionPlayerFleet(Some(starterFleet.get.tail),newGrid,nbToPlace-1,boatPlaced::placedFleet)
     }
-
   }
 }
 
@@ -332,7 +332,12 @@ object Player {
     * @return True is it's a hit, else false
     */
   def isHit(x: Int, y: Int, enemyGrid: List[List[Int]]): Boolean = {
-    if(enemyGrid(x)(y) == 1) true else false
+    try{
+      if(enemyGrid(x)(y) == 1) true else false
+    }catch{
+      case _:Exception => false
+    }
+
   }
 
   /** Verify if inputs are correct and contained in grid and direction are correct.

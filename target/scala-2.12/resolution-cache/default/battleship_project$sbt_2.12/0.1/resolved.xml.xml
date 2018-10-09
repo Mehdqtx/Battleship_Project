@@ -4,7 +4,7 @@
 		module="battleship_project$sbt_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20181009130551"
+		publication="20181009162445"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
